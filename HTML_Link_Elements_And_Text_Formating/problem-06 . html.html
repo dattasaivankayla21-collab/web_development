@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://127.0.0.1:5500/.dist/.dist/problem6.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>My Programming Notes</title>
+</head>
+<body>
+
+    <h1>My Programming Notes</h1>
+
+    <h2>JavaScript</h2>
+
+    <p>
+        JavaScript is a programming language commonly used to make websites
+        interactive. <strong>It is widely used in web development.</strong>
+    </p>
+
+    <pre><code>
+console.log("Hello World");
+    </code></pre>
+
+    <hr>
+
+    <h2>Java</h2>
+
+    <p>
+        Java is a programming language used for application development,
+        web applications and many other software systems.
+        <mark>Java supports object-oriented programming.</mark>
+    </p>
+
+    <pre><code>
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+    </code></pre>
+
+    <hr>
+
+    <h2>Python</h2>
+
+    <p>
+        Python is a simple and powerful programming language.
+        It is used in web development, automation, data science and
+        artificial intelligence.
+    </p>
+
+    <p>
+        <strong>Python is known for its simple syntax.</strong>
+    </p>
+
+    <pre><code>
+print("Hello World")
+    </code></pre>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://127.0.0.1:5500/.dist/.dist/problem6.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Science Notes</title>
+</head>
+<body>
+
+    <h1>Science Notes</h1>
+
+    <h2>Chemistry</h2>
+
+    <p>
+        Water is represented by <strong>H<sub>2</sub>O</strong>.
+    </p>
+
+    <p>
+        Carbon dioxide is represented by CO<sub>2</sub>.
+    </p>
+
+    <p>
+        Oxygen is represented by O<sub>2</sub>.
+    </p>
+
+    <p>
+        Sulfuric acid is represented by H<sub>2</sub>SO<sub>4</sub>.
+    </p>
+
+    <p>
+        <mark>Chemical formulas</mark> represent substances using symbols
+        and numbers.
+    </p>
+
+    <hr>
+
+    <h2>Physics</h2>
+
+    <p>
+        The area of a square can be written as m<sup>2</sup>.
+    </p>
+
+    <p>
+        The volume of a cube can be written as m<sup>3</sup>.
+    </p>
+
+    <p>
+        <strong>Speed describes how quickly an object changes its position.</strong>
+    </p>
+
+    <hr>
+
+    <h2>Biology</h2>
+
+    <p>
+        Biology is the study of living organisms. Cells are the basic
+        structural units of living organisms.
+    </p>
+
+    <p>
+        <mark>Cell</mark> is an important concept in biology.
+    </p>
+
+    <hr>
+
+    <h2>Quick Revision</h2>
+
+    <p>
+        H<sub>2</sub>O = Water<br>
+        CO<sub>2</sub> = Carbon dioxide<br>
+        O<sub>2</sub> = Oxygen
+    </p>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

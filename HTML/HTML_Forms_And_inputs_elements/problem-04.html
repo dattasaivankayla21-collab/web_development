@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Leave Request</title>
+</head>
+<body>
+  <h1>Employee Leave Request Form</h1>
+  <hr>
+  <p>Please fill out this form to request leave.</p>
+  <hr>
+
+  <form>
+    <label>Name:<input type="text" name="name" required></label><br>
+    <hr>
+    <label>Employee ID:<input type="text" name="empid" minlength="4" maxlength="10" required></label><br>
+    <hr
+    <label>Email:<input type="email" name="email" required></label><br>
+    <hr
+
+    <label>Department:
+      <select name="department" required>
+        <option value="" disabled selected>Select</option>
+        <option>HR</option>
+        <option>Finance</option>
+        <option>IT</option>
+        <option>Sales</option>
+        <option>Marketing</option>
+        <option>Operations</option>
+      </select>
+    </label><br>
+<hr>
+    <p>Leave Type:
+      <input type="radio" name="leave" value="casual" required>Casual
+      <input type="radio" name="leave" value="sick">Sick
+      <input type="radio" name="leave" value="earned">Earned
+      <input type="radio" name="leave" value="wfh">Work From Home
+      <input type="radio" name="leave" value="other">Other
+    </p>
+    <hr>
+
+    <label>Start Date:<input type="date" name="start" required></label><br>
+    <hr>
+    <label>End Date:<input type="date" name="end" required></label><br>
+    <hr>
+    <label>Leave Days:<input type="number" name="days" min="1" max="30" step="1" required></label><br>
+    <hr>
+
+    <p>Reachable During Leave:
+      <input type="radio" name="reachable" value="yes" required>Yes
+      <input type="radio" name="reachable" value="no">No
+    </p>
+    <hr>
+
+    <label>Reason:<br><textarea name="reason" rows="3" cols="40" required></textarea></label><br>
+    <hr>
+    <label>Alternate Contact:<input type="tel" name="altcontact" pattern="[0-9]{10}"></label><br>
+    <hr>
+    <label>Supporting Document:<input type="file" name="document"></label><br>
+
+    <label><input type="checkbox" name="declare" required>I declare the information is correct</label><br><br>
+
+
+    <input type="submit" value="Submit">
+    <hr>
+    <input type="reset" value="Reset">
+    <hr>
+  </form>
+  <hr>
+
+  <h2>Leave Categories</h2>
+  <table border="1">
+    <tr><th>Category</th><th>Description</th></tr>
+    <tr><td>Casual</td><td>Short personal leave</td></tr>
+    <tr><td>Sick</td><td>Medical leave</td></tr>
+    <tr><td>Earned</td><td>Planned vacation</td></tr>
+    <tr><td>WFH</td><td>Work from home</td></tr>
+  </table>
+</body>
+</html>

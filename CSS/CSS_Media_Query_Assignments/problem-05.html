@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Investors</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+
+            font-family: Arial;
+        }
+
+        .navbar {
+            background-color: yellow;
+
+            padding: 12px;
+
+            font-size: 22px;
+        }
+
+        .investors {
+            display: grid;
+
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+
+            gap: 10px;
+
+            padding: 10px;
+        }
+
+        .main-investor {
+            grid-row: span 3;
+
+            background-color: red;
+
+            min-height: 450px;
+
+            padding: 20px;
+        }
+
+        .investor {
+            background-color: #00ef3b;
+
+            min-height: 140px;
+
+            padding: 20px;
+        }
+
+        /* Medium Screen */
+
+        @media (max-width: 800px) {
+
+            .investors {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .main-investor {
+                grid-column: 1 / -1;
+
+                grid-row: auto;
+
+                min-height: 250px;
+            }
+
+        }
+
+        /* Small Screen */
+
+        @media (max-width: 500px) {
+
+            .investors {
+                grid-template-columns: 1fr;
+            }
+
+            .main-investor {
+                grid-column: auto;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        Navigation
+    </div>
+
+    <div class="investors">
+
+        <div class="main-investor">
+            INVESTORS
+        </div>
+
+        <div class="investor">
+            Investor 1
+        </div>
+
+        <div class="investor">
+            Investor 2
+        </div>
+
+        <div class="investor">
+            Investor 3
+        </div>
+
+        <div class="investor">
+            Investor 4
+        </div>
+
+        <div class="investor">
+            Investor 5
+        </div>
+
+        <div class="investor">
+            Investor 6
+        </div>
+
+    </div>
+
+</body>
+</html>

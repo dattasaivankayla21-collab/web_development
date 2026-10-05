@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Listing Portal</title>
+
+    <style>
+
+        /* Universal Selector */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Element Selector */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        /* Grouping Selector */
+        h1, h2, p {
+            margin-top: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 30px;
+        }
+
+        /* ID Selector */
+        #movies {
+            width: 900px;
+            max-width: 95%;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        /* Class Selector */
+        .movie-card {
+            display: flex;
+
+            height: 130px;
+
+            border: 1px solid #ff9bb0;
+            background-color: white;
+        }
+
+        .movie-card img {
+            width: 120px;
+            height: 128px;
+
+            object-fit: cover;
+        }
+
+        .movie-info {
+            padding: 15px;
+        }
+
+        .movie-info h2 {
+            font-family: Georgia, serif;
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+        .movie-info p {
+            font-family: Georgia, serif;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #ff416c;
+            color: white;
+
+            border: none;
+            border-radius: 6px;
+
+            padding: 8px 14px;
+
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Now Showing</h1>
+
+    <div id="movies">
+
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/120x130?text=ET">
+
+            <div class="movie-info">
+                <h2>ET (2022)</h2>
+                <p>Releasing on 11 Mar, 2022</p>
+                <button>Book tickets</button>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/120x130?text=Jhund">
+
+            <div class="movie-info">
+                <h2>Jhund</h2>
+                <p>Releasing on 11 Mar, 2022</p>
+                <button>Book tickets</button>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/120x130?text=Gangubai">
+
+            <div class="movie-info">
+                <h2>Gangubai Kathiawadi</h2>
+                <p>Releasing on 11 Mar, 2022</p>
+                <button>Book tickets</button>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/120x130?text=Radhe+Shyam">
+
+            <div class="movie-info">
+                <h2>Radhe Shyam</h2>
+                <p>Releasing on 11 Mar, 2022</p>
+                <button>Book tickets</button>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/120x130?text=Uncharted">
+
+            <div class="movie-info">
+                <h2>Uncharted</h2>
+                <p>Releasing on 11 Mar, 2022</p>
+                <button>Book tickets</button>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/120x130?text=Batman">
+
+            <div class="movie-info">
+                <h2>The Batman</h2>
+                <p>Releasing on 11 Mar, 2022</p>
+                <button>Book tickets</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

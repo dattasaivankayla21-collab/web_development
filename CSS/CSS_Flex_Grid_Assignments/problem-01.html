@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Photo Gallery</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .navbar {
+            background-color: #172d52;
+
+            color: white;
+
+            padding: 15px 30px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+        }
+
+        .links {
+            display: flex;
+
+            gap: 30px;
+        }
+
+        .gallery {
+            width: 750px;
+
+            max-width: 90%;
+
+            margin: 40px auto;
+        }
+
+        .gallery h1 {
+            text-align: center;
+
+            color: #d99b34;
+        }
+
+        .photos {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+        }
+
+        .photos img {
+            width: calc(33.33% - 8px);
+
+            height: 150px;
+
+            object-fit: cover;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <b>PHOTO GALLERY</b>
+
+        <div class="links">
+
+            <span>HOME</span>
+            <span>ABOUT</span>
+            <span>PROJECTS</span>
+            <span>CONTACT</span>
+
+        </div>
+
+    </nav>
+
+    <main class="gallery">
+
+        <h1>PHOTO GALLERY</h1>
+
+        <div class="photos">
+
+            <img src="https://picsum.photos/seed/photo1/400/300">
+            <img src="https://picsum.photos/seed/photo2/400/300">
+            <img src="https://picsum.photos/seed/photo3/400/300">
+            <img src="https://picsum.photos/seed/photo4/400/300">
+            <img src="https://picsum.photos/seed/photo5/400/300">
+            <img src="https://picsum.photos/seed/photo6/400/300">
+
+        </div>
+
+    </main>
+
+</body>
+</html>

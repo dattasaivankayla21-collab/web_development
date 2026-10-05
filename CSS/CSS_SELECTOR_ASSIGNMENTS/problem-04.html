@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Periodic Table</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+
+            font-family: Arial, sans-serif;
+
+            background-color: #f7f7f7;
+        }
+
+        h1 {
+            text-align: center;
+
+            margin: 30px;
+        }
+
+        .periodic-table {
+            max-width: 1200px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: repeat(18, 1fr);
+
+            gap: 4px;
+        }
+
+        .element {
+            height: 70px;
+
+            border: 1px solid #555;
+
+            border-radius: 5px;
+
+            padding: 5px;
+
+            text-align: center;
+
+            background-color: #b8d8f0;
+        }
+
+        .nonmetal {
+            background-color: #bfe9c0;
+        }
+
+        .noble {
+            background-color: #f5c3c3;
+        }
+
+        .halogen {
+            background-color: #e7c7f3;
+        }
+
+        .silicon {
+            background-color: #ff9f1c;
+
+            border: 3px solid black;
+        }
+
+        .number {
+            display: block;
+
+            text-align: left;
+
+            font-size: 9px;
+        }
+
+        .symbol {
+            font-size: 22px;
+
+            font-weight: bold;
+        }
+
+        .name {
+            font-size: 8px;
+        }
+
+        .empty {
+            visibility: hidden;
+        }
+
+        .h {
+            grid-column: 1;
+        }
+
+        .he {
+            grid-column: 18;
+        }
+
+        .li {
+            grid-column: 1;
+        }
+
+        .be {
+            grid-column: 2;
+        }
+
+        .b {
+            grid-column: 13;
+        }
+
+        .c {
+            grid-column: 14;
+        }
+
+        .n {
+            grid-column: 15;
+        }
+
+        .o {
+            grid-column: 16;
+        }
+
+        .f {
+            grid-column: 17;
+        }
+
+        .ne {
+            grid-column: 18;
+        }
+
+        .na {
+            grid-column: 1;
+        }
+
+        .mg {
+            grid-column: 2;
+        }
+
+        .al {
+            grid-column: 13;
+        }
+
+        .si {
+            grid-column: 14;
+        }
+
+        .p {
+            grid-column: 15;
+        }
+
+        .s {
+            grid-column: 16;
+        }
+
+        .cl {
+            grid-column: 17;
+        }
+
+        .ar {
+            grid-column: 18;
+        }
+
+        .series-title {
+            text-align: center;
+
+            margin-top: 30px;
+        }
+
+        .series {
+            max-width: 950px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: repeat(15, 1fr);
+
+            gap: 4px;
+        }
+
+        .series .element {
+            height: 55px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>THE PERIODIC TABLE OF ELEMENTS</h1>
+
+    <div class="periodic-table">
+
+        <div class="element nonmetal h">
+            <span class="number">1</span>
+            <span class="symbol">H</span>
+            <span class="name">Hydrogen</span>
+        </div>
+
+        <div class="element noble he">
+            <span class="number">2</span>
+            <span class="symbol">He</span>
+            <span class="name">Helium</span>
+        </div>
+
+        <div class="element li">
+            <span class="number">3</span>
+            <span class="symbol">Li</span>
+            <span class="name">Lithium</span>
+        </div>
+
+        <div class="element be">
+            <span class="number">4</span>
+            <span class="symbol">Be</span>
+            <span class="name">Beryllium</span>
+        </div>
+
+        <div class="element nonmetal b">
+            <span class="number">5</span>
+            <span class="symbol">B</span>
+            <span class="name">Boron</span>
+        </div>
+
+        <div class="element nonmetal c">
+            <span class="number">6</span>
+            <span class="symbol">C</span>
+            <span class="name">Carbon</span>
+        </div>
+
+        <div class="element nonmetal n">
+            <span class="number">7</span>
+            <span class="symbol">N</span>
+            <span class="name">Nitrogen</span>
+        </div>
+
+        <div class="element nonmetal o">
+            <span class="number">8</span>
+            <span class="symbol">O</span>
+            <span class="name">Oxygen</span>
+        </div>
+
+        <div class="element halogen f">
+            <span class="number">9</span>
+            <span class="symbol">F</span>
+            <span class="name">Fluorine</span>
+        </div>
+
+        <div class="element noble ne">
+            <span class="number">10</span>
+            <span class="symbol">Ne</span>
+            <span class="name">Neon</span>
+        </div>
+
+        <div class="element na">
+            <span class="number">11</span>
+            <span class="symbol">Na</span>
+            <span class="name">Sodium</span>
+        </div>
+
+        <div class="element mg">
+            <span class="number">12</span>
+            <span class="symbol">Mg</span>
+            <span class="name">Magnesium</span>
+        </div>
+
+        <div class="element al">
+            <span class="number">13</span>
+            <span class="symbol">Al</span>
+            <span class="name">Aluminium</span>
+        </div>
+
+        <div class="element silicon si">
+            <span class="number">14</span>
+            <span class="symbol">Si</span>
+            <span class="name">Silicon</span>
+        </div>
+
+        <div class="element nonmetal p">
+            <span class="number">15</span>
+            <span class="symbol">P</span>
+            <span class="name">Phosphorus</span>
+        </div>
+
+        <div class="element nonmetal s">
+            <span class="number">16</span>
+            <span class="symbol">S</span>
+            <span class="name">Sulfur</span>
+        </div>
+
+        <div class="element halogen cl">
+            <span class="number">17</span>
+            <span class="symbol">Cl</span>
+            <span class="name">Chlorine</span>
+        </div>
+
+        <div class="element noble ar">
+            <span class="number">18</span>
+            <span class="symbol">Ar</span>
+            <span class="name">Argon</span>
+        </div>
+
+    </div>
+
+    <h2 class="series-title">
+        Lanthanides and Actinides
+    </h2>
+
+    <div class="series">
+
+        <div class="element">57<br><b>La</b></div>
+        <div class="element">58<br><b>Ce</b></div>
+        <div class="element">59<br><b>Pr</b></div>
+        <div class="element">60<br><b>Nd</b></div>
+        <div class="element">61<br><b>Pm</b></div>
+        <div class="element">62<br><b>Sm</b></div>
+        <div class="element">63<br><b>Eu</b></div>
+        <div class="element">64<br><b>Gd</b></div>
+        <div class="element">65<br><b>Tb</b></div>
+        <div class="element">66<br><b>Dy</b></div>
+        <div class="element">67<br><b>Ho</b></div>
+        <div class="element">68<br><b>Er</b></div>
+        <div class="element">69<br><b>Tm</b></div>
+        <div class="element">70<br><b>Yb</b></div>
+        <div class="element">71<br><b>Lu</b></div>
+
+        <div class="element">89<br><b>Ac</b></div>
+        <div class="element">90<br><b>Th</b></div>
+        <div class="element">91<br><b>Pa</b></div>
+        <div class="element">92<br><b>U</b></div>
+        <div class="element">93<br><b>Np</b></div>
+        <div class="element">94<br><b>Pu</b></div>
+        <div class="element">95<br><b>Am</b></div>
+        <div class="element">96<br><b>Cm</b></div>
+        <div class="element">97<br><b>Bk</b></div>
+        <div class="element">98<br><b>Cf</b></div>
+        <div class="element">99<br><b>Es</b></div>
+        <div class="element">100<br><b>Fm</b></div>
+        <div class="element">101<br><b>Md</b></div>
+        <div class="element">102<br><b>No</b></div>
+        <div class="element">103<br><b>Lr</b></div>
+
+    </div>
+
+</body>
+</html>

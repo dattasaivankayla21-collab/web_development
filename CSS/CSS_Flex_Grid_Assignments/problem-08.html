@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Calculator</title>
+
+    <style>
+
+        .calculator {
+            width: 300px;
+
+            margin: 50px auto;
+
+            padding: 18px;
+
+            box-shadow: 0 2px 10px #cccccc;
+
+            font-family: Arial;
+        }
+
+        .display {
+            height: 60px;
+
+            border: 1px solid #dddddd;
+
+            margin-bottom: 12px;
+        }
+
+        .keys {
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 6px;
+        }
+
+        .key {
+            height: 45px;
+
+            border: 1px solid #dddddd;
+
+            background-color: white;
+        }
+
+        .operator {
+            background-color: black;
+
+            color: white;
+        }
+
+        .clear {
+            background-color: red;
+
+            color: white;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <div class="display"></div>
+
+        <div class="keys">
+
+            <button class="key">1</button>
+            <button class="key">2</button>
+            <button class="key">3</button>
+            <button class="key operator">+</button>
+
+            <button class="key">4</button>
+            <button class="key">5</button>
+            <button class="key">6</button>
+            <button class="key operator">-</button>
+
+            <button class="key">7</button>
+            <button class="key">8</button>
+            <button class="key">9</button>
+            <button class="key operator">*</button>
+
+            <button class="key clear">C</button>
+            <button class="key">0</button>
+            <button class="key operator">=</button>
+            <button class="key operator">/</button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Grid Area Responsive</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+
+            font-family: Arial;
+        }
+
+        .layout {
+            max-width: 800px;
+
+            margin: 40px auto;
+
+            display: grid;
+
+            grid-template-columns: 3fr 1fr;
+
+            grid-template-areas:
+
+                "nav nav"
+                "left right1"
+                "left right2"
+                "left right3";
+
+            gap: 8px;
+        }
+
+        .nav {
+            grid-area: nav;
+
+            background-color: yellow;
+
+            padding: 15px;
+        }
+
+        .left {
+            grid-area: left;
+
+            background-color: red;
+
+            min-height: 300px;
+
+            padding: 20px;
+        }
+
+        .right1 {
+            grid-area: right1;
+        }
+
+        .right2 {
+            grid-area: right2;
+        }
+
+        .right3 {
+            grid-area: right3;
+        }
+
+        .right {
+            background-color: #00ef3b;
+
+            padding: 20px;
+
+            min-height: 90px;
+        }
+
+        /* Medium Screen */
+
+        @media (max-width: 700px) {
+
+            .layout {
+                grid-template-columns: repeat(3, 1fr);
+
+                grid-template-areas:
+
+                    "nav nav nav"
+                    "left left left"
+                    "right1 right2 right3";
+            }
+
+            .left {
+                min-height: 180px;
+            }
+
+        }
+
+        /* Small Screen */
+
+        @media (max-width: 450px) {
+
+            .layout {
+                grid-template-columns: 1fr;
+
+                grid-template-areas:
+
+                    "nav"
+                    "left"
+                    "right1"
+                    "right2"
+                    "right3";
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <div class="nav">
+            Navigation
+        </div>
+
+        <div class="left">
+            LEFT BOX
+        </div>
+
+        <div class="right right1">
+            RIGHT BOX 1
+        </div>
+
+        <div class="right right2">
+            RIGHT BOX 2
+        </div>
+
+        <div class="right right3">
+            RIGHT BOX 3
+        </div>
+
+    </div>
+
+</body>
+</html>
